@@ -2,10 +2,96 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Sitio Web - Adrián Stiven</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio Personal | Adrían Stiven</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-color: #10b981;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: var(--card-bg);
+            border: 1px solid rgba(16, 185, 129, 0.2);
+            border-radius: 12px;
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3);
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(16, 185, 129, 0.1);
+            color: var(--accent-color);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            letter-spacing: 0.5px;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        p {
+            color: var(--text-muted);
+            font-size: 1rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .info-box {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 20px;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .info-box span {
+            color: var(--text-main);
+            font-weight: 500;
+        }
+    </style>
 </head>
 <body>
-    <h1>Bienvenido a mi sitio web personal</h1>
-    <p>Proyecto desarrollado para la actividad académica.</p>
+
+    <div class="container">
+        <div class="badge">Prácticas Web &bull; UFPS Ocaña</div>
+        <h1>¡Bienvenido a mi sitio web personal!</h1>
+        <p>Proyecto desarrollado como parte de la actividad académica para la asignatura de Mantenimiento de Computadores y Desarrollo de Aplicaciones Web.</p>
+        
+        <div class="info-box">
+            <p>Estudiante: <span>Adrrían Stiven</span></p>
+            <p>Universidad Francisco de Paula Santander Ocaña</p>
+        </div>
+    </div>
+
 </body>
 </html>
